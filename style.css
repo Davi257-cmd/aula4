@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos do cabeçalho*/
+header {
+    background-color: #ee4f6f;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#logo {
+    width: 8em;
+}
+
+/* Estilos de Navegação*/
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 17px;
+}
+
+nav ul li a:hover {
+    background-color: #ee4f6f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos do conteudo principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.text {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#image {
+    width: 100%;
+    
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de Rodapé */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
